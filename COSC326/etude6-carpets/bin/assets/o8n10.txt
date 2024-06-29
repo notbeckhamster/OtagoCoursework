@@ -1,0 +1,11 @@
+ccccc
+babbb
+cbacc
+bacbb
+cbbac
+baaca
+cbcac
+acbbb
+bbaac
+cabbb
+0

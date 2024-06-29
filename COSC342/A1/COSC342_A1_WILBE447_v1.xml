@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<indexing>
+ <object alt="" name="Image1" object_type="graphic"/>
+ <object alt="" name="Image2" object_type="graphic"/>
+ <object alt="" name="Image3" object_type="graphic"/>
+ <paragraph index="18" node_type="writer">COSC 342 Assignment 1 – Image Mosaicing</paragraph>
+ <paragraph index="19" node_type="writer">Report for Beckham Wilson ID #7564267</paragraph>
+ <paragraph index="20" node_type="writer">Introduction</paragraph>
+ <paragraph index="21" node_type="writer">The aim of this report is to perform experiments on the image stitching process specifcally the feature matching and homography estimation. First experiment we will compare two feature matchers used by OpenCV and second experiment vary the choice of RANSAC threshold used in homogrpahy estimation. Both experiemtn will be measuring the accuracy of the homography via the reprojection error. </paragraph>
+ <paragraph index="23" node_type="writer">compare features of transformed to reference (reprojection error)</paragraph>
+ <paragraph index="24" node_type="writer"> and inlier ratio to outlier</paragraph>
+ <paragraph index="25" node_type="writer">^ used iamge for both</paragraph>
+ <paragraph index="26" node_type="writer">Metric used for measuring homography accuracy: </paragraph>
+ <paragraph index="27" node_type="writer">Reprojection Error, calculates the euclidean distance between transformed points in source image to points in destination image.  It measures how well the homography aligns the source and destination points. Based on the opencv source code. Same reprojection error used in findInliers() in ptsetreg.cpp and computeError in fundam.cpp used by opencv findHomography() in filtering by threshold.</paragraph>
+ <paragraph index="31" node_type="writer">Both experiments used the same image dataset, it contains a mix of 3 scene types: Outdoor/Natural greenery, Exteriror scnes of buildings</paragraph>
+ <paragraph index="32" node_type="writer">Interior Scenses of buidlings</paragraph>
+ <paragraph index="33" node_type="writer">Planar scenes and camera rotations</paragraph>
+ <paragraph index="34" node_type="writer">1-40 1000x750 pixel JPG from https://github.com/tlliao/Single-perspective-warps/tree/master</paragraph>
+ <paragraph index="35" node_type="writer">Scene type: 40 with a focus on Exterior of buildings with a mix of greenery</paragraph>
+ <paragraph index="36" node_type="writer">41-59 3000x4000 pixel JPG from myself </paragraph>
+ <paragraph index="37" node_type="writer">60-104 1500x2000 pixels JPG from myself</paragraph>
+ <paragraph index="38" node_type="writer">41-104 Scene type: Interior scenes 40, Exterior scenes 16, Greenery scenes 8.</paragraph>
+ <paragraph index="39" node_type="writer">Experiment 1: Feature Matching</paragraph>
+ <paragraph index="40" node_type="writer">Hypothesis/Question:</paragraph>
+ <paragraph index="41" node_type="writer">Which OpenCV feature matcher results in a more accurate homography</paragraph>
+ <paragraph index="42" node_type="writer">Experimental Design:</paragraph>
+ <paragraph index="43" node_type="writer">I will calulcate the reprojection error... </paragraph>
+ <paragraph index="44" node_type="writer">Explain what your experiment is, what data you are going to be using, what you will measure, and how this will answer your question or test your hypothesis. If there are some parts of your design (e.g. your set of test data) that are common to both of the experiments, then you can move that out to the front of the report.</paragraph>
+ <paragraph index="46" node_type="writer">Results:</paragraph>
+ <paragraph index="47" node_type="writer">Clearly present the results of your experiment. This is the place for charts, tables, etc. but don’t just present them without explanation. </paragraph>
+ <paragraph index="51" node_type="writer">Summary Statistics for Reprojection errors for both inliers and outliers</paragraph>
+ <object index="52" name="Table1" object_type="table"/>
+ <paragraph index="57" node_type="writer" parent_index="52">Brute-Force</paragraph>
+ <paragraph index="60" node_type="writer" parent_index="52">FLANN</paragraph>
+ <paragraph index="63" node_type="writer" parent_index="52">Count</paragraph>
+ <paragraph index="66" node_type="writer" parent_index="52">172242</paragraph>
+ <paragraph index="69" node_type="writer" parent_index="52">181106</paragraph>
+ <paragraph index="72" node_type="writer" parent_index="52">Mean</paragraph>
+ <paragraph index="75" node_type="writer" parent_index="52">145.01</paragraph>
+ <paragraph index="78" node_type="writer" parent_index="52">239.15</paragraph>
+ <paragraph index="81" node_type="writer" parent_index="52">Standard Deviation</paragraph>
+ <paragraph index="84" node_type="writer" parent_index="52">480.27</paragraph>
+ <paragraph index="87" node_type="writer" parent_index="52">616.62</paragraph>
+ <paragraph index="90" node_type="writer" parent_index="52">Min</paragraph>
+ <paragraph index="93" node_type="writer" parent_index="52">0.01</paragraph>
+ <paragraph index="96" node_type="writer" parent_index="52">0</paragraph>
+ <paragraph index="99" node_type="writer" parent_index="52">Lower Quartile (25%)</paragraph>
+ <paragraph index="102" node_type="writer" parent_index="52">0.77</paragraph>
+ <paragraph index="105" node_type="writer" parent_index="52">0.82</paragraph>
+ <paragraph index="108" node_type="writer" parent_index="52">Median (50%)</paragraph>
+ <paragraph index="111" node_type="writer" parent_index="52">1.73</paragraph>
+ <paragraph index="114" node_type="writer" parent_index="52">2.16</paragraph>
+ <paragraph index="117" node_type="writer" parent_index="52">Upper Quartle (75%)</paragraph>
+ <paragraph index="120" node_type="writer" parent_index="52">9.48</paragraph>
+ <paragraph index="123" node_type="writer" parent_index="52">27.56</paragraph>
+ <paragraph index="126" node_type="writer" parent_index="52">Max</paragraph>
+ <paragraph index="129" node_type="writer" parent_index="52">5869.18</paragraph>
+ <paragraph index="132" node_type="writer" parent_index="52">9623.1</paragraph>
+ <paragraph index="136" node_type="writer">Discussion/Conclusions: </paragraph>
+ <paragraph index="137" node_type="writer">What do the results of the experiment tell us about the hypothesis or question. It is OK if they don’t answer the question clearly, or if the results are not what you would expect. The important thing is to interpret the results honestly and to explain what you have observed as clearly as possible.</paragraph>
+ <paragraph index="138" node_type="writer">Experiment 2: RANSAC for Homography Estimation</paragraph>
+ <paragraph index="139" node_type="writer">Hypothesis/Question:</paragraph>
+ <paragraph index="140" node_type="writer">How does the choice of RANSAC threshold affect the accuracy of the homography?</paragraph>
+ <paragraph index="141" node_type="writer">Experimental Design:</paragraph>
+ <paragraph index="142" node_type="writer">Explain what your experiment is, what data you are going to be using, what you will measure, and how this will answer your question or test your hypothesis. If there are some parts of your design (e.g. your set of test data) that are common to both of the experiments, then you can move that out to the front of the report.</paragraph>
+ <paragraph index="143" node_type="writer">Results:</paragraph>
+ <paragraph index="144" node_type="writer">Clearly present the results of your experiment. This is the place for charts, tables, etc. but don’t just present them without explanation. </paragraph>
+ <paragraph index="145" node_type="writer">Discussion/Conclusions: </paragraph>
+ <paragraph index="146" node_type="writer">What do the results of the experiment tell us about the hypothesis or question. It is OK if they don’t answer the question clearly, or if the results are not what you would expect. The important thing is to interpret the results honestly and to explain what you have observed as clearly as possible.</paragraph>
+ <paragraph index="147" node_type="writer">Final Remarks</paragraph>
+ <paragraph index="148" node_type="writer">Draw together the two experiments and tell us what you’ve found from them in general. This is also a good place to suggest what the next steps will be. It is good to be honest about the limitations of your work, especially if you can see how to improve things in the future.</paragraph>
+ <paragraph index="149" node_type="writer">Only 3 scene types although due to time constraints and not balalnced and not balanced within the pixel reoslutions. </paragraph>
+ <paragraph index="150" node_type="writer">Also I resized alot of images to smaller reoslutiosn since the processing time was rather long with the 3000x4000 images with some images returning 100,000+ features</paragraph>
+</indexing>

@@ -1,0 +1,3 @@
+elephant,cat,lion,tiger,leopard,panther
+snake,crocodile,alligator,lizard
+peacock,sparrow,kiwi,whio,blackbird

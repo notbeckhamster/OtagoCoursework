@@ -1,0 +1,3 @@
+apple: app el
+appleApple: leap app pel
+frog: 

@@ -1,0 +1,95 @@
+@startuml
+
+skinparam {
+  Style StrictUML
+
+  ' make the stereotypes less ugly
+  ClassStereotypeFont {
+    Size 10
+    Style plain
+  }
+
+  ' make boxes slightly less pointy
+  RoundCorner 5
+
+  ' make everything slightly less cramped
+  Padding 2
+
+  ' vertical spacing (make room for labels)
+  RankSep 100
+
+  ' horizontal spacing (make room for labels)
+  NodeSep 120
+}
+
+class "Member" as member {
+    * MemberId
+    --
+    * FirstName
+    * LastName
+    * Phone
+    * Gender
+    * Address
+    * Email
+    * MembershipType
+    * JoinDate
+    * RenewDate <<derived>>
+    * Goals <<mutiple>>
+    * isCardIssued
+    BirthDate
+}
+
+class "Staff" as staff {
+    * StaffId
+    --
+    * FirstName
+    * LastName
+    * Phone
+    * Gender
+    * Address
+    * Email
+    * IrdNum
+    * Position
+    * Salary
+    * BirthDate
+}
+
+
+class "Payment" as payment {
+    * Payment_Id
+    --
+    * PaymentType
+    * PaymentAmount
+    * PaymentDate
+    * GST
+    * Total <<derived>>
+    Notes
+}
+
+
+class "Exercise" as exercise {
+    * Name
+    ---
+    * Sets
+    * Reps
+    * Weight
+    Notes
+}
+
+
+staff ||..|{ member : trainer
+member ||..|{ payment : pays for
+member ||--o{ exercise : performs
+
+
+
+
+
+
+
+
+
+
+
+
+@enduml

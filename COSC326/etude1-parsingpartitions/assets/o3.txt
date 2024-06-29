@@ -1,0 +1,22 @@
+3
+3 2 1
+3 2 1
+# INVALID: Suggestion: Use either a comma or whitespace as delimiters, not both. Line: 1,2 3
+# INVALID: Suggestion: Expected 2 numbers. Got 1. Line: 1, 
+# INVALID: Suggestion: Expected 2 numbers. Got 1. Line: ,1
+# INVALID: Suggestion: Expected 4 numbers. Got 3. Line: ,3,3,3
+2 2 2
+# INVALID: Suggestion: Detected special characters ;. Use # for comments and , for partitions. Line: 2;,2
+# INVALID: Suggestion: Detected special characters ;. Use # for comments and , for partitions. Line: 2;2
+# INVALID: Suggestion: Separator lines must contain at least 3 hyphens in sequence. Line: --  -
+# INVALID: Suggestion: Separator lines must contain at least 3 hyphens in sequence. Line: ---     ----
+# INVALID: Suggestion: Detected non-hyphen characters; separator lines must contain (only) hyphens. Line: --- fjskl
+# INVALID: Suggestion: Detected non-hyphen characters; separator lines must contain (only) hyphens. Line: fds ---
+# INVALID: Suggestion: No numbers detected; partition must contain a sequence of numbers. Line: ,
+
+# INVALID: Suggestion: Detected special characters :. Use # for comments and , for partitions. Line: :
+# INVALID: Suggestion: Expected 2 numbers. Got 1. Line: 1, 
+# INVALID: Suggestion: Expected 2 numbers. Got 1. Line: 1,
+# INVALID: Suggestion: No numbers detected; partition must contain a sequence of numbers. Line: , 
+# INVALID: Suggestion: The first character of a comment line must begin with #. Line:  #
+

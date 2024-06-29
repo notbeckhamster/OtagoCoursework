@@ -1,0 +1,21 @@
+# Blender 4.0.2 MTL File: 'None'
+# www.blender.org
+
+newmtl DefaultMaterial
+Ns 29.999998
+Ka 1.000000 1.000000 1.000000
+Ks 0.050000 0.050000 0.050000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd DefaultMaterial_Base_color.bmp
+
+newmtl glass
+Ns 30.0000
+Ka 0.800000 0.800000 0.800000
+Kd 0.800000 0.800000 0.800000
+Ks 0.050000 0.050000 0.050000
+Ni 1.000000
+d 1.000000
+illum 2

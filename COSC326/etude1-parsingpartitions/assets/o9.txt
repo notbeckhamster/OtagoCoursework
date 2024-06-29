@@ -1,0 +1,14 @@
+# INVALID SCENARIO
+# INVALID: Suggestion: Separator lines must contain at least 3 hyphens in sequence. Line: --
+--------
+
+3 2 1
+
+# INVALID: Suggestion: Detected special characters \, \, \, (, ", ", ). Use # for comments and , for partitions. Line:         \n \numbers \n print("hi")
+# INVALID: Suggestion: Detected non-hyphen characters; separator lines must contain (only) hyphens. Line: _-----
+--------
+4534534534 2
+# INVALID: Suggestion: Detected negative numbers, use only positive numbers in partitions Line: -12 -132
+# INVALID: Suggestion: Detected non-hyphen characters; separator lines must contain (only) hyphens. Line: -----33333
+# INVALID: Suggestion: Detected non-hyphen characters; separator lines must contain (only) hyphens. Line: ---- 3,  3, 3
+# INVALID: Suggestion: Detected special characters !. Use # for comments and , for partitions. Line: !2 

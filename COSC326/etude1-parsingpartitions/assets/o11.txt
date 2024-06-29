@@ -1,0 +1,3 @@
+# INVALID SCENARIO
+# INVALID: Suggestion: Separator lines must contain at least 3 hyphens in sequence. Line: --- ---
+# INVALID: Suggestion: Separator lines must contain at least 3 hyphens in sequence. Line: --- --- 

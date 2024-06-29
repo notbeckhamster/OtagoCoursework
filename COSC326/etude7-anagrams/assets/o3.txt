@@ -1,0 +1,3 @@
+apple: app el
+banana: ban na a
+frog: 

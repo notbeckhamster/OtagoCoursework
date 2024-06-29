@@ -1,0 +1,4 @@
+# INVALID SCENARIO
+# INVALID: Suggestion: No numbers detected; partition must contain a sequence of numbers. Line: sdlkfksad
+# INVALID: Suggestion: Separator lines must contain at least 3 hyphens in sequence. Line: -sdfsdl-
+# INVALID: Suggestion: No numbers detected; partition must contain a sequence of numbers. Line: fksd

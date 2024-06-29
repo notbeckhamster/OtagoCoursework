@@ -1,0 +1,2 @@
+1123456,Stanger,Nigel,nigel.stanger@otago.ac.nz,6000.20
+1323454,George,Mark,mark.george@otago.ac.nz,5000.30

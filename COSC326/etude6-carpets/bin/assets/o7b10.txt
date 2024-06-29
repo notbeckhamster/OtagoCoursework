@@ -1,0 +1,11 @@
+caabb
+acaca
+ccacb
+cbacc
+ccccc
+acaaa
+acaab
+bbbab
+cabac
+bbbac
+1

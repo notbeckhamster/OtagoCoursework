@@ -1,0 +1,4 @@
+w ESWN bbbb
+b WNES wwww
+32875255
+# -632042 -632015

@@ -1,0 +1,17 @@
+
+# INVALID: Suggestion: The first character of a comment line must begin with #. Line:    #
+# INVALID: Suggestion: Detected special characters ^. Use # for comments and , for partitions. Line: ^
+# INVALID: Suggestion: Detected non-hyphen characters; separator lines must contain (only) hyphens. Line: ---ldjkfsdkj
+# INVALID: Suggestion: Separator lines must contain at least 3 hyphens in sequence. Line: - 
+# INVALID: Suggestion: No numbers detected; partition must contain a sequence of numbers. Line: ,
+# INVALID: Suggestion: Detected negative numbers, use only positive numbers in partitions Line: -33, -33, 33
+# INVALID: Suggestion: Use either a comma or whitespace as delimiters, not both. Line: 1, 2    	3
+# INVALID: Suggestion: Detected special characters ;, ;. Use # for comments and , for partitions. Line: 1 ; 2 ; 3
+3 2 1
+3 2 1
+# INVALID: Suggestion: Detected special characters '. Use # for comments and , for partitions. Line: 1,2'3
+# INVALID: Suggestion: Detected special characters ". Use # for comments and , for partitions. Line: 1,"3
+3 2 1
+23123123123 21312 123
+--------
+32423

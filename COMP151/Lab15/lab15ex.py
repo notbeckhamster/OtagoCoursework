@@ -1,0 +1,23 @@
+import numpy as np
+a1 = np.array(range(1,101))
+print(a1)
+a2 = np.reshape(a1, (10,10))
+print(a2)
+a3 = np.array(range(1000,1100))
+a4 = np.reshape(a3, (10,10))
+print(a4)
+a5 = np.array(range(0,20))
+a7 = np.array(range(0,100))
+print(a1)
+a8 = np.reshape(a7, (10,10))
+print(a8)
+a6 = a8[0]
+print(a6)
+a7 = a8+a6
+print(a7)
+print(a8*a8)
+a3d = np.array(range(90)).reshape((3,3,10))
+print(a3d[2, 0])
+print(a3d[:,:,4])
+print(a3d[:,0,0])
+print(a3d[2,:,-4])

@@ -1,0 +1,16 @@
+# INVALID: Suggestion: Invalid separator:  ,,  Line: 1 ,, 2 ,, 3
+# INVALID: Suggestion: No numbers detected; partition must contain a sequence of numbers. Line: ,,,
+# INVALID: Suggestion: No numbers detected; partition must contain a sequence of numbers. Line:  ,,, ,,   ,
+# INVALID: Suggestion: No numbers detected; partition must contain a sequence of numbers. Line: test ,, test ,, test
+# INVALID: Suggestion: Invalid separator:  ,,  Line: 1 ,, 2 , 3
+# INVALID: Suggestion: Invalid separator:  ,,  Line: 1 ,, 3 3 
+# INVALID: Suggestion: Invalid separator:  , ,, Line: 1 , ,,
+# INVALID: Suggestion: Invalid separator:  ,, Line: 1 , 2 ,,
+3 2 1
+3 2 1
+3 2 1
+3 2 1
+# INVALID: Suggestion: Detected special characters ~. Use # for comments and , for partitions. Line: 1~2
+# INVALID: Suggestion: Detected non-hyphen characters; separator lines must contain (only) hyphens. Line: 1---3
+# INVALID: Suggestion: Detected non-hyphen characters; separator lines must contain (only) hyphens. Line: 1--- 222 ---3 
+# INVALID: Suggestion: Detected non-hyphen characters; separator lines must contain (only) hyphens. Line: 1---2---3

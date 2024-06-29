@@ -1,0 +1,4 @@
+# INVALID: Suggestion: For partitions numbers cannot contain leading zeros. Line: 03 02 01 
+# INVALID: Suggestion: For partitions numbers cannot contain leading zeros. Line: 3 02 1
+# INVALID: Suggestion: For partitions numbers cannot contain leading zeros. Line: 00003 1 2
+30 2 1

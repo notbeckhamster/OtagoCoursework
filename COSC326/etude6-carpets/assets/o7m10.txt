@@ -1,0 +1,11 @@
+ccacb
+ccacb
+abacb
+abbcb
+aabcb
+aabbb
+babbb
+cabbb
+cabbc
+cabac
+36
